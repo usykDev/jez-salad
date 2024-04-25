@@ -56,6 +56,7 @@ type Props = {
 };
 
 const Reviews = ({ setSelectedPage }: Props) => {
+  // @ts-ignore: TS6133
   const [swiperRef, setSwiperRef] = useState<any>(null);
 
   const isAboveMediumScreens = useMediaQuery("(min-width: 980px)");
