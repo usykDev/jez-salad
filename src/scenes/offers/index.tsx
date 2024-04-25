@@ -12,11 +12,6 @@ import GrapesSalad from "@/assets/saladsPhoto/GrapesSalad.png";
 import GreenVibes from "@/assets/saladsPhoto/GreenVibes.png";
 import VeganSalad from "@/assets/saladsPhoto/VeganSalad.png";
 
-// Slider
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
