@@ -5,7 +5,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 const childVariant = {
   hidden: { opacity: 0, scale: 0.9 },
-  visible: { opacity: 1, scale: 1 },
+  visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
 };
 
 type Props = {
@@ -18,8 +18,8 @@ type Props = {
 const Card = ({ image, title, description, setSelectedPage }: Props) => {
   return (
     <motion.div
-      className="hover:drop-shadow-4xl mt-5 flex transform flex-col items-start rounded-[50px] border border-primary-100 bg-white
-        px-6 py-16 text-start duration-500 sm:w-full sm:justify-center "
+      className="mt-5 flex transform flex-col items-start rounded-[50px] border border-primary-100 bg-white px-6
+        py-16 text-start duration-500 hover:drop-shadow-4xl sm:w-full sm:justify-center "
       variants={childVariant}
     >
       <div className="mb-4 flex  ">

@@ -30,7 +30,7 @@ const cards: Array<CardType> = [
 const container = {
   hidden: {},
   visible: {
-    transition: { staggerChildren: 0.2 }, // transition between children
+    transition: { staggerChildren: 0.3 }, // transition between children
   },
 };
 
@@ -48,7 +48,7 @@ const AboutUs = ({ setSelectedPage }: Props) => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.5 }}
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
@@ -76,7 +76,7 @@ const AboutUs = ({ setSelectedPage }: Props) => {
           className="mt-5 justify-evenly gap-8 md:flex"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.1 }}
           variants={container}
         >
           {cards.map((card: CardType) => (
