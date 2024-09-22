@@ -5,6 +5,8 @@ import HomePageGraphic from "@/assets/HomePageGraphic.png";
 import AbstractLines from "@/assets/AbstractLines.png";
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -101,11 +103,16 @@ const Home = ({ setSelectedPage }: Props) => {
         {/* Image */}
 
         <div className="flex basis-3/5 justify-center">
-          <img
+          <LazyLoadImage
+            alt="home-pageGraphic"
+            src={HomePageGraphic}
+            effect="blur"
+          />
+          {/* <img
             className="drop-shadow-3xl"
             alt="home-pageGraphic"
             src={HomePageGraphic}
-          />
+          /> */}
         </div>
       </motion.div>
     </section>
