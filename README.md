@@ -17,6 +17,4 @@ To get started, you'll need to install the project dependencies. Use the followi
 
 ```bash
 npm install
-
-```bash
 npm run dev
