@@ -63,9 +63,9 @@ const Reviews = ({ setSelectedPage }: Props) => {
   const isAboveSmallScreens = useMediaQuery("(min-width: 683px)");
 
   return (
-    <section id="reviews" className="min-h-screen w-full pt-8 md:py-40">
+    <section id="reviews" className="min-h-screen w-full pt-8 ">
       <motion.div
-        className="min-h-[800px] bg-primary-100 py-24 md:py-20"
+        className="md:py-18 min-h-[800px] bg-primary-100 py-24"
         onViewportEnter={() => setSelectedPage(SelectedPage.Reviews)}
       >
         <motion.div
