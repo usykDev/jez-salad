@@ -23,7 +23,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
   };
 
   return (
-    <section id="contactus" className="mx-auto w-5/6 py-20 ">
+    <section id="contactus" className="mx-auto w-5/6 pb-20 pt-10 ">
       <motion.div
         style={{ backgroundImage: `url(${Lines})` }}
         className="z-0 mt-24 flex  flex-col gap-20 rounded-[50px] bg-primary-100 bg-cover bg-center p-16 "

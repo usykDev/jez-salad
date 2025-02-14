@@ -95,7 +95,7 @@ const Offers = ({ setSelectedPage }: Props) => {
   }, []);
 
   return (
-    <section id="offers" className="mx-auto min-h-full w-5/6 py-40 md:py-20">
+    <section id="offers" className="mx-auto min-h-full w-5/6 pt-40 md:pt-20">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Offers)}>
         {/* Header */}
         <motion.div
